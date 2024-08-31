@@ -26,7 +26,7 @@ sequenceDiagram
 
     browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
     activate server
-    server-->>browser: application/json; charset=utf-8; [{"content": "spa note", "date": "2024-08-31T00:06:13.835Z"}]
+    server-->>browser: application/json; charset=utf-8
     deactivate server
 
     Note right of browser: The browser sends the new note to the server and server replies 201 status with application/json; charset=utf-8
